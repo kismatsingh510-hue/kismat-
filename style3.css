@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vh;
+    color: white;
+    overflow: hidden;
+}
+.signup{
+    background: #181818;
+    padding: 40px;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    align-items: center;
+}
+
+.signlogo{
+    text-align: center;
+    margin-bottom: 50px;
+    transform: translateY(40px);
+}
+.signlogo i{
+    font-size: 50px;
+    color: #1db954;
+    margin-bottom: 15px;
+}
+.signlogo h1{
+    font-size: 30px;
+}
+.sign-page{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.sign-page input{
+    padding: 12px;
+    border-radius: 5px;
+    border: noe;
+    background: #282828;
+    color: white;
+    font-size: 14px;
+}
+.sign-page input:focus{
+    outline: 2px solid #1db954;
+}
+.sign-page button{
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #1db954;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sign-page button:hover{
+    background: #1ed760;
+}
+.login p{
+    text-align:center;
+    margin:20px 0;
+    color:#aaa;
+}
+
+/* Social Buttons */
+.signbutton{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.fb-btn{
+    background:transparent;
+    border:1px solid #555;
+    color:white;
+    padding:12px;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.fb-btn:hover{
+    border:1px solid white;
+    transform:scale(1.03);
+}
+
+/* Signup */
+.log_in{
+    text-align:center;
+    margin-top:25px;
+}
+
+.log_in h3{
+    font-size:14px;
+    color:#aaa;
+}
+
+.log_in a{
+    color:#1DB954;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.log_in a:hover{
+    text-decoration:underline;
+}
+
+/* Footer */
+.foot{
+    margin-top:20px;
+    width:380px;
+    text-align:center;
+    font-size:11px;
+    color:#777;
+}
+
+.foot span{
+    color:white;
+    cursor:pointer;
+}
+
+.foot span:hover{
+    text-decoration:underline;
+}

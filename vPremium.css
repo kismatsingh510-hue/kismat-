@@ -1,0 +1,303 @@
+html{
+  scroll-behavior:smooth;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#121212;
+  color:white;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:black;
+  position:fixed;
+  width:100%;
+}
+
+nav ul li{
+  display:inline-block;
+  margin-left:20px;
+}
+
+nav a{
+  text-decoration:none;
+  color:white;
+}
+
+nav a:hover{
+  color:#1db954;
+}
+
+.logo span{
+  color:#1db954;
+}
+
+/* HERO */
+.hero{
+  background-image: url(wallpaper/Lofi\ Music\,\ Minimalism.jpg);
+  background-size: cover;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.btn{
+  background:#1db954;
+  padding:15px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+  margin-top:20px;
+}
+
+/* PRICING */
+.pricing{
+  padding:120px 60px;
+  background:#121212;
+  color:white;
+  background-image: url(wallpaper/gpy.jpg);
+  background-size: cover;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  margin-top:50px;
+}
+
+.plan{
+  background:#1e1e1e;
+  width:380px;
+  padding:30px;
+  border-radius:20px;
+  position:relative;
+  transition:0.4s ease;
+  border:1px solid #2a2a2a;
+}
+
+
+
+.plan h1{
+  font-size:26px;
+  margin:10px 0;
+  color: #68ecf3;
+}
+.plan button{
+    background: #68ecf3;
+}
+
+.price{
+  color:#1db954;
+  margin-bottom:15px;
+}
+
+.plan ul{
+  
+  padding:0;
+  margin-bottom:20px;
+}
+
+.plan ul li{
+  margin:8px 0;
+  color:#ccc;
+  
+}
+
+.plan button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:30px;
+  background:#68ecf3;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+/* standard card  */
+.standard-card{
+  width:380px;
+  background:#1e1e1e;
+  padding:35px;
+  border-radius:20px;
+  color:white;
+  position:relative;
+  box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+/* Top green badge */
+.offer-badge{
+  position:absolute;
+  top:-15px;
+  left:20px;
+  background:#1db954;
+  color:black;
+  padding:6px 14px;
+  border-radius:20px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.premium-label{
+  margin-top:10px;
+  color:#ccc;
+}
+
+.plan-name{
+  font-size:32px;
+  color:#1db954;
+  margin:5px 0 10px;
+}
+
+.main-price{
+  font-weight:bold;
+  margin-bottom:5px;
+}
+
+.after-price{
+  color:#aaa;
+  margin-bottom:15px;
+}
+
+hr{
+  border:0.5px solid #333;
+  margin:15px 0;
+}
+
+.features{
+  list-style:disc;
+  padding-left:20px;
+  margin-bottom:20px;
+}
+
+.features li{
+  margin-bottom:8px;
+  color:#ddd;
+}
+
+/* Main green button */
+.primary-btn{
+  width:100%;
+  padding:12px;
+  background:#1db954;
+  border:none;
+  border-radius:30px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-bottom:10px;
+}
+
+.primary-btn:hover{
+  background:#17a84b;
+}
+
+/* Outline button */
+.secondary-btn{
+  width:100%;
+  padding:12px;
+  background:transparent;
+  border:1px solid #555;
+  color:white;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+.secondary-btn:hover{
+  border-color:#1db954;
+  color:#1db954;
+}
+
+.terms{
+  font-size:12px;
+  color:#888;
+  margin-top:15px;
+}
+.premium-card{
+    width:380px;
+  background:#1e1e1e;
+  padding:35px;
+  border-radius:20px;
+  color:white;
+  position:relative;
+  box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+.premium-badge{
+    position:absolute;
+  top:-15px;
+  left:20px;
+  background:#1db954;
+  color:black;
+  padding:6px 14px;
+  border-radius:20px;
+  font-weight:bold;
+  font-size:14px;
+}
+.pre-label{
+    margin-top: 10px;
+    color: #ccc;
+}
+.pre-name{
+    font-size: 32px;
+    color: goldenrod;
+    margin: 5px 0 10px;
+}
+.premium-price{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+hr{
+    border: 0.5px solid #333;
+}
+.list{
+     list-style:disc;
+  padding-left:20px;
+  margin-bottom:20px;
+}
+.list li{
+    margin-bottom: 8px;
+    color: #ddd;
+}
+.Primary-btn{
+    width:100%;
+  padding:12px;
+  background: goldenrod;
+  border:none;
+  border-radius:30px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-bottom:10px;
+}
+.Secondary-btn{
+  width:100%;
+  padding:12px;
+  background:transparent;
+  border:1px solid #555;
+  color:white;
+  border-radius:30px;
+  cursor:pointer;
+}
+.Terms{
+  font-size:12px;
+  color:#888;
+  margin-top:15px;
+}

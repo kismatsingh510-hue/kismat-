@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=settings" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><i class="fa-brands fa-spotify"></i></a>
+                <a href="#"><i class="fa-solid fa-house" id="refreshBtn"></i></a>
+            </div>
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="What do you want to play?">
+                    
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                
+                </div>
+                <div class="right-section">
+                <div class="dow">
+                    <ul>
+                        <li onclick="prem()">Premium</li>
+                        <li onclick="supp()">Support</li>
+                        <li onclick="download()">Download</li>
+                    </ul>
+                </div>
+                <div class="log-in">
+                    <ul>
+                        <li><a href="https://play.google.com/store/search?q=spotify&c=apps&hl=en_IN"><i class="fa-solid fa-circle-arrow-down"></i>Install App</a></li>
+                        <li onclick="gointro()">Sign Up</li>
+                        <li><button type="button" onclick="ongo()" class="btn btn-light" id="goBtn">Log in</button></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank" class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/919155238588" target="_blank" class="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://x.com" target="_blank" class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://in.linkedin.com" target="_blank" class="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+        </div>
+    
+    
+        <!-- left div container -->
+         <div class="container">
+         <div class="left">
+            <div class="btn">
+                <h2>Your Library</h2>
+                <button type="button" class="btn btn-outline-secondary" onclick="goIntro()">+&nbsp;Create</button>
+                
+            </div>
+            <div class="LEFT">
+            <div class="left-1">
+                <h3>Create your first playlist</h3>
+                <p>It's easy, we'll help you</p>
+                <button type="button" id="create-playlist">Create playlist</button>
+                
+            </div>
+            <div class="left-2">
+                <h3>Let's find some podcasts to follow</h3>
+                <p>We'll keep you updated on new episodes</p>
+                <button type="button" >Browse podcasts</button>
+            </div>
+            </div>
+            <div class="foot">
+                <p>Legal &nbsp; Safety & Privacy Center &nbsp; Privacy Policy</p>
+                <p>About Ads &nbsp; Accessibility</p>
+            </div>
+         </div>
+
+         <!-- right-container  -->
+          <div class="right">
+            <div class="utsav">
+            <div class="right-logo">
+                <h1>Trending songs</h1>
+                <a href="#" class="show-all">Show all</a>
+            </div>
+            <!-- card ---- -->
+             
+             
+             <div class="card-row">
+                <div class="spotify-card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+                    <div class="img-box">
+                        <img src="image/ranbir.jpg" alt="billie">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Pehle Bhi Main</h4>
+                    <p>.Vishal Mishra, Raj Shekhar</p>
+                </div>
+                <div class="spotify-card">
+                    <div class="img-box">
+                        <img src="image/seedhe maut.jpg" alt="billie">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Seedhe Maut</h4>
+                    <p>.E Seedhe Maut,KR$NA</p>
+                </div>
+                <div class="spotify-card">
+                    <div class="img-box">
+                        <img src="image/Ashique.jpg" alt="billie">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Tum Hi Ho</h4>
+                    <p>.Arjit Singh, Mithoon</p>
+                </div>
+                <div class="spotify-card">
+                    <div class="img-box">
+                        <img src="image/Choo Lo.jpg" alt="billie">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Choo Lo</h4>
+                    <p>.The Local Train</p>
+                </div>
+                <div class="spotify-card">
+                    <div class="img-box">
+                        <img src="image/Dil Bechara.jpg" alt="billie">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Dil Bechara</h4>
+                    <p>.A.R Rahman</p>
+                </div>
+                <div class="spotify-card">
+                    <div class="img-box">
+                        <img src="image/kabir.jpg" alt="billie">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Kaise Hua</h4>
+                    <p>.Vishal Mishra, Sachet Tandon</p>
+                </div>
+                <div class="spotify-card">
+                    <div class="img-box">
+                        <img src="image/MustWatch.jpg" alt="billie">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Raanjhanaa</h4>
+                    <p>.A.R Rahman, Jaswinder Singh</p>
+                </div>
+                <div class="spotify-card">
+                    <div class="img-box">
+                        <img src="image/Tamasha.jpg" alt="billie">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Matargashti</h4>
+                    <p>.Mohit Chauhan</p>
+                </div>
+             </div>
+             
+             
+             <!-- popular artists -->
+               <div class="Right-Logo">
+                <h1>Popular artists</h1>
+                <a href="#" class="show-all">Show all</a>
+            </div>
+            <!-- card ---- -->
+             <div class="artist-row">
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/ar.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>A.R. Rahman</h4>
+                    <p>-Artist</p>
+                </div>
+                
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/arjit.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Arjit Singh</h4>
+                    <p>-Artist</p>
+                </div>
+                
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/Atif Aslam.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Atif Aslam</h4>
+                    <p>-Artist</p>
+                </div>
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/shraya.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Shreya Ghoshal</h4>
+                    <p>-Artist</p>
+                </div>
+                
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="image/billie.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Billie Eilish</h4>
+                    <p>-Artist</p>
+                </div>
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/anirudh.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Anirudh</h4>
+                    <p>-Artist</p>
+                </div>
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/malik.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Arman malik</h4>
+                    <p>-Artist</p>
+                </div>
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/KING.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>KING</h4>
+                    <p>-Artist</p>
+                </div>
+                <!-- <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/Darshan Raval.jpg" alt="">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Darshan Raval</h4>
+                    <p>-Artist</p>
+                </div> -->
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/ap.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>AP Dillon</h4>
+                    <p>-Artist</p>
+                </div>
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/Aujila.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Karan Aujla</h4>
+                    <p>-Artist</p>
+                </div>
+                <div class="artist-card">
+                    <div class="img-bom">
+                        <img src="singer/Diljit Dosanjh.jpg" alt="billie">
+                        <div class="play-btm">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Diljit Dosanjh</h4>
+                    <p>-Artist</p>
+                </div>
+                
+                </div>
+                <!-- album -------- -->
+            <div class="album">
+            <div class="album-logo">
+                <h1>Popular album and single</h1>
+                <a href="#" class="show-all">Show all</a>
+            </div>
+             <div class="album-row">
+                <div class="album-card">
+                    <div class="img-bot">
+                        <img src="image/ashique2.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Aashiqui 2</h4>
+                    <p>.Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                </div>
+                
+                <div class="album-card">
+                    <div class="img-bot">
+                        <img src="playlist/Brahmāstra Part One_ Shiva.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Bharmastra Part-1</h4>
+                    <p>.Arjit Singh, Amitabh Bhattacharya</p>
+                </div>
+                <div class="album-card">
+                    <div class="img-bot">
+                        <img src="playlist/lap.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Lapataa ladies</h4>
+                    <p>.Shreya Ghoshal, Ram Sampath, Arjit Singh,Prashant</p>
+                </div>
+                
+                <div class="album-card">
+                    <div class="img-bot">
+                        <img src="playlist/Titanic.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Titanic</h4>
+                    <p>.James Horner,Natalia Walewska, Celine Dion</p>
+                </div>
+                <div class="album-card">
+                    <div class="img-bot">
+                        <img src="playlist/ran.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Tu Jhooti Main Makkar</h4>
+                    <p>.Pritam, Arjit Singh, Amitabh Bhattacharya</p>
+                </div>
+                
+                <div class="album-card">
+                    <div class="img-bot">
+                        <img src="playlist/befikre.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Befekre</h4>
+                    <p>.Vishal-Shekhar, Vishal Dadlani, Jaideep</p>
+                </div>
+                <div class="album-card">
+                    <div class="img-bot">
+                        <img src="playlist/ye.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Yeh Jawaani Hai Deewani</h4>
+                    <p>.Pritam</p>
+                </div>
+                <div class="album-card">
+                    <div class="img-bot">
+                        <img src="playlist/sanam Teri kasam.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Sanam Teri Kasam</h4>
+                    <p>.Ankit Tiwari, Palak Muchhal, Neeti Mohan</p>
+                </div>
+                <div class="album-card">
+                    <div class="img-bot">
+                        <img src="playlist/sita.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Sita Raman</h4>
+                    <p>.Vishal Chandrashekhar</p>
+                </div>
+                 <div class="album-card">
+                    <div class="img-bot">
+                        <img src="playlist/reason.jpg" alt="billie">
+                        <div class="play-btx">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>For Reason</h4>
+                    <p>.Karan Aujla</p>
+                </div>
+             </div>
+             <!-- hollywood -->
+               <div class="hollywood">
+            <div class="hollywood-logo">
+                <h1>Hollywood Songs</h1>
+                <a href="#" class="show-all">Show all</a>
+            </div>
+             <div class="hollywood-row">
+                <div class="hollywood-card">
+                    <div class="img-bod">
+                        <img src="hollywood/epp.jpg" alt="billie">
+                        <div class="play-btl">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Espresso</h4>
+                    <p>.Sabrina Carpenter</p>
+                </div>
+                <div class="hollywood-card">
+                    <div class="img-bod">
+                        <img src="hollywood/dua.jpg" alt="billie">
+                        <div class="play-btl">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Levitating</h4>
+                    <p>.Dua Lipa</p>
+                </div>
+                <div class="hollywood-card">
+                    <div class="img-bod">
+                        <img src="hollywood/tyla chanel _.jpg" alt="billie">
+                        <div class="play-btl">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>CHANEL</h4>
+                    <p>.Song. Tyla</p>
+                </div>
+                <div class="hollywood-card">
+                    <div class="img-bod">
+                        <img src="hollywood/Dharia.jpg" alt="billie">
+                        <div class="play-btl">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Sugar & Brownies</h4>
+                    <p>.Dharia</p>
+                </div>
+                <div class="hollywood-card">
+                    <div class="img-bod">
+                        <img src="hollywood/Ellie Goulding.jpg" alt="billie">
+                        <div class="play-btl">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Love Me Like You Do</h4>
+                    <p>.Ellie Goulding</p>
+                </div>
+                <div class="hollywood-card">
+                    <div class="img-bod">
+                        <img src="hollywood/katy parry.jpg" alt="billie">
+                        <div class="play-btl">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>Harleys In Hawali</h4>
+                    <p>.Katy Perry</p>
+                </div>
+                <div class="hollywood-card">
+                    <div class="img-bod">
+                        <img src="hollywood/dua lipa.jpg" alt="billie">
+                        <div class="play-btl">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <h4>One Kiss</h4>
+                    <p>.Dua Lipa</p>
+                </div>
+             </div>
+
+
+
+
+
+
+             <!-- footer ------------- -->
+            
+              <div class="footer-row">
+              <div class="footer">
+                <div class="company">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="communities">
+                    <h5>Communities</h5>
+                    <ul>
+                        <li><a href="#">For Artists</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Vendors</a></li>
+                    </ul>
+                </div>
+                <div class="useful">
+                    <h5>Useful links</h5>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Free Mobil App</a></li>
+                        <li><a href="#">Popular by country</a></li>
+                        <li><a href="#">Import your music</a></li>
+                    </ul>
+                </div>
+                <div class="spotify">
+                    <h5>Spotify Plans</h5>
+                    <ul>
+                        <li><a href="#">Premium Lite</a></li>
+                        <li><a href="#">Premium Standard</a></li>
+                        <li><a href="#">Premium Platium</a></li>
+                        <li><a href="#">Premium Student</a></li>
+                        <li><a href="#">Spotify Free</a></li>
+                    </ul>
+                </div>
+              </div>
+
+              </div>
+          
+            
+        </header>
+
+
+        
+                 
+                    
+    
+
+    <script src="script.js"></script>
+    <!-- <script src="script2.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+  margin:0;
+  height:100vh;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+/* RAYS BACKGROUND */
+.rays{
+  position:absolute;
+  width:200%;
+  height:200%;
+  background:repeating-conic-gradient(
+    rgba(29,185,84,0.4) 0deg,
+    rgba(29,185,84,0.1) 5deg,
+    transparent 10deg
+  );
+  animation:rotateRays 6s linear infinite;
+  filter:blur(60px);
+}
+
+@keyframes rotateRays{
+  from{ transform:rotate(0deg); }
+  to{ transform:rotate(360deg); }
+}
+
+/* MAIN LOGO */
+.logo{
+  position:relative;
+  width:230px;
+  height:230px;
+  border-radius:50%;
+  background:#1db954;
+  box-shadow:0 0 60px #1db954,
+             0 0 120px #1db954;
+  animation:pulse 2s infinite;
+}
+
+/* PULSE */
+@keyframes pulse{
+  0%{ box-shadow:0 0 40px #1db954; }
+  50%{ box-shadow:0 0 120px #1db954; }
+  100%{ box-shadow:0 0 40px #1db954; }
+}
+
+/* WAVES */
+.wave{
+  position:absolute;
+  width:140px;
+  height:20px;
+  background:black;
+  border-radius:50px;
+  left:45px;
+}
+
+.w1{ top:75px; animation:move 1.2s infinite; }
+.w2{ top:105px; animation:move 1.2s infinite 0.2s; }
+.w3{ top:135px; animation:move 1.2s infinite 0.4s; }
+
+@keyframes move{
+  0%{ transform:scaleX(1); }
+  50%{ transform:scaleX(1.3); }
+  100%{ transform:scaleX(1); }
+}

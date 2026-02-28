@@ -1,0 +1,84 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#121212;
+  color:white;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:black;
+  position:fixed;
+  width:100%;
+}
+
+nav ul li{
+  display:inline-block;
+  margin-left:20px;
+}
+.down{
+    font-size: 34px;
+}
+.log{
+    font-size: 34px;
+}
+
+nav a{
+  text-decoration:none;
+  color:white;
+}
+
+
+.logo i{
+    font-size: 34px;
+    color: #1db954;
+}
+
+
+.hero{
+  background-image: url(wallpaper/Music\ Thumbnails.jpg);
+  background-size: cover;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:80px;
+  margin-bottom:20px;
+}
+.hero p{
+    font-size: 40px;
+}
+.hero h6{
+    margin: 5px;
+    text-decoration: underline;
+}
+.btn{
+  background: #181818;;
+  padding:15px 30px;
+  border-radius:20px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:bold;
+  margin-top:20px;
+  transition: all 0.3s ease;
+}
+.btn:hover{
+    transform: translateY(-6px);
+}
+.btn i{
+    font-size: 24px;
+    margin-right: 10px;
+}
